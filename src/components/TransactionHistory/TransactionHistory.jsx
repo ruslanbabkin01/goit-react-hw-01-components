@@ -14,12 +14,12 @@ export const TransactionHistory = ({ items }) => {
 
         {items.map(({ type, amount , currency, id }) => (
     <tr key={id}>
-              <td>{type}</td>
+      <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
     </tr>
         ))}
-            </tbody>
+      </tbody>
   </table>
    )
 }
@@ -28,7 +28,7 @@ TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
       PropTypes.exact({
     type: PropTypes.string.isRequired,
-    amount: PropTypes.number.isRequired,
+    amount: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
       })

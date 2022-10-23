@@ -1,5 +1,14 @@
 import PropTypes from 'prop-types';
 
+// import {
+//   AvatarImg,
+//   UserInfo,
+//   UserLocation,
+//   UserName,
+//   UserStat,
+//   UserStatItem,
+// } from './Profile.styled';
+
 export const FriendList = ({ friends}) => {
   return (
     <ul class="friend-list">

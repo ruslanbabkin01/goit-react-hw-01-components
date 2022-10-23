@@ -20,6 +20,11 @@ export const GlobalStyles = css`
     font-style: normal;
   }
 
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
   h1,
   h2,
   h3,
@@ -55,11 +60,6 @@ export const GlobalStyles = css`
     display: block;
     max-width: 100%;
     height: auto;
-  }
-
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
   }
 `;
 

@@ -1,37 +1,37 @@
 import PropTypes from 'prop-types';
+import { Description, PrifileBox, ImgAvatar, Username, UserTag, UserLocation,StatsBox,StatsItem, StatsLabel, StatsQuantity } from './Profile.styled';
+
+
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className="profile">
-      <div className="description">
-        <div className='thumb'>
-          <img
+    <PrifileBox>
+      <Description>
+          <ImgAvatar
           src={avatar}
           alt="User avatar"
-          className="avatar"
           />
-        </div>
        
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+        <Username>{username}</Username>
+        <UserTag>@{tag}</UserTag>
+        <UserLocation>{location}</UserLocation>
+      </Description>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{ stats.followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{ stats.views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+      <StatsBox>
+        <StatsItem>
+          <StatsLabel>Followers</StatsLabel>
+          <StatsQuantity>{stats.followers}</StatsQuantity>
+        </StatsItem>
+        <StatsItem>
+          <StatsLabel>Views</StatsLabel>
+          <StatsQuantity>{stats.views}</StatsQuantity>
+        </StatsItem>
+        <StatsItem>
+          <StatsLabel>Likes</StatsLabel>
+          <StatsQuantity>{stats.likes}</StatsQuantity>
+        </StatsItem>
+      </StatsBox>
+    </PrifileBox>
   )
 }
 
