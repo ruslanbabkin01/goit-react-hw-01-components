@@ -19,7 +19,7 @@ export const TableRow = styled.tr`
    background-color:${props => props.theme.colors.light};
  }
 
-  >:first-child{
+  >:first-of-type{
   text-transform:capitalize;
   display: flex;
   padding-left: 33%;

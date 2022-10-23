@@ -28,7 +28,7 @@ export const StatItem = styled.li`
   padding: 8px;
   background-color:${getRandomHexColor};
 
-  >:first-child {
+  >:first-of-type {
     font-size: 14px;
     display: block;
     margin-bottom:8px;
