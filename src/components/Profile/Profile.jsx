@@ -1,15 +1,23 @@
 import PropTypes from 'prop-types';
-import { Description, PrifileBox, ImgAvatar, Username, UserTag, UserLocation,StatsBox,StatsItem, StatsLabel, StatsQuantity } from './Profile.styled';
+import {
+  Description,
+  PrifileBox,
+  ImgAvatar,
+  Username,
+  UserTag,
+  UserLocation,
+  StatsBox,
+  StatsItem,
+  StatsLabel,
+  StatsQuantity,
+} from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <PrifileBox>
       <Description>
-          <ImgAvatar
-          src={avatar}
-          alt="User avatar"
-          />
-       
+        <ImgAvatar src={avatar} alt="User avatar" />
+
         <Username>{username}</Username>
         <UserTag>@{tag}</UserTag>
         <UserLocation>{location}</UserLocation>
@@ -30,8 +38,8 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         </StatsItem>
       </StatsBox>
     </PrifileBox>
-  )
-}
+  );
+};
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
@@ -42,5 +50,5 @@ Profile.propTypes = {
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
     likes: PropTypes.number.isRequired,
-  })
+  }),
 };

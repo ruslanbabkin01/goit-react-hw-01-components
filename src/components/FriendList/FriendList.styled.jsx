@@ -3,9 +3,9 @@ import styled from '@emotion/styled';
 export const FriendUl = styled.ul`
   width: 320px;
   margin: 0 auto;
-  margin-bottom:30px;
-  
-  >:not(:last-child){
+  margin-bottom: 30px;
+
+  > :not(:last-child) {
     margin-bottom: 10px;
   }
 `;
@@ -22,7 +22,7 @@ export const Status = styled.span`
   display: block;
   width: 20px;
   height: 20px;
-  background-color: ${({isOnline}) => isOnline ? '#00ff00' : '#ff0000'};
+  background-color: ${({ isOnline }) => (isOnline ? '#00ff00' : '#ff0000')};
   border-radius: 50%;
   margin-left: 20px;
 `;

@@ -9,25 +9,24 @@ export const Table = styled.table`
 `;
 
 export const TableHead = styled.thead`
-background-color: ${props => props.theme.colors.accent};
+  background-color: ${props => props.theme.colors.accent};
   text-transform: uppercase;
   color: #fff;
 `;
 
 export const TableRow = styled.tr`
- &:nth-of-type(2n+1){
-   background-color:${props => props.theme.colors.light};
- }
+  &:nth-of-type(2n + 1) {
+    background-color: ${props => props.theme.colors.light};
+  }
 
-  >:first-of-type{
-  text-transform:capitalize;
-  display: flex;
-  padding-left: 33%;
-}
+  > :first-of-type {
+    text-transform: capitalize;
+    display: flex;
+    padding-left: 33%;
+  }
 `;
 
 export const TableCell = styled.td`
   min-width: 220px;
   padding: 12px;
 `;
-
