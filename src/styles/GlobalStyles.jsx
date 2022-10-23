@@ -32,13 +32,13 @@ export const GlobalStyles = css`
   h5,
   h6,
   p {
-    margin-top: 0;
+    margin: 0;
   }
 
   ul,
   ol {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
   }
 
