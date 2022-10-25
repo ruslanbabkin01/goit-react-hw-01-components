@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import {
   Description,
-  PrifileBox,
   ImgAvatar,
   Username,
   UserTag,
@@ -12,9 +11,20 @@ import {
   StatsQuantity,
 } from './Profile.styled';
 
+import { Box } from '../../styles/Box';
+
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <PrifileBox>
+    <Box
+      width={320}
+      my={0}
+      mx="auto"
+      textAlign="center"
+      bg="white"
+      boxShadow="regular"
+      borderRadius={4}
+      mb={30}
+    >
       <Description>
         <ImgAvatar src={avatar} alt="User avatar" />
 
@@ -37,7 +47,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
           <StatsQuantity>{stats.likes}</StatsQuantity>
         </StatsItem>
       </StatsBox>
-    </PrifileBox>
+    </Box>
   );
 };
 

@@ -1,15 +1,5 @@
 import styled from '@emotion/styled';
 
-export const PrifileBox = styled.div`
-  width: 320px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: ${props => props.theme.colors.white};
-  box-shadow: ${props => props.theme.shadows.regular};
-  border-radius: 4px;
-  margin-bottom: 30px;
-`;
-
 export const Description = styled.div`
   padding: 25px;
 `;
@@ -57,5 +47,5 @@ export const StatsLabel = styled.span`
 
 export const StatsQuantity = styled.span`
   font-size: ${props => props.theme.fontSizes.medium};
-  font-weight: 700;
+  font-weight: ${props => props.theme.fontWeight.bold};
 `;

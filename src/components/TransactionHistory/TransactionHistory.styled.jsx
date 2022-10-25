@@ -18,6 +18,9 @@ export const TableRow = styled.tr`
   &:nth-of-type(2n + 1) {
     background-color: ${props => props.theme.colors.light};
   }
+  &:nth-of-type(2n) {
+    background-color: ${props => props.theme.colors.gray};
+  }
 
   > :first-of-type {
     text-transform: capitalize;

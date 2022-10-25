@@ -19,6 +19,7 @@ export const theme = Object.freeze({
     bold: 700,
   },
   spacing: value => `${4 * value}px`,
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   shadows: {
     small: '0 5px 7px -1px rgba(51, 51, 51, 0.23)',
     regular: '0px 4px 10px 4px #9e9e9e',
